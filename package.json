@@ -1,0 +1,24 @@
+{
+  "name": "ai-multi-agent-stack",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n \"api,ui\" -c \"blue,green\" \"npm run dev -w @ai-stack/api\" \"npm run dev -w @ai-stack/ui\"",
+    "dev:api": "npm run dev -w @ai-stack/api",
+    "dev:ui": "npm run dev -w @ai-stack/ui",
+    "build": "npm run build -w @ai-stack/ui",
+    "start": "npm run start -w @ai-stack/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "overrides": {
+    "esbuild": "0.28.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

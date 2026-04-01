@@ -1,0 +1,30 @@
+{
+  "name": "@ai-stack/api",
+  "version": "1.0.0",
+  "description": "AI Multi Agent Stack — Orchestration API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env WORKSPACE_DIR=../../workspace tsx src/server.ts",
+    "start": "cross-env WORKSPACE_DIR=../../workspace tsx src/server.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
+    "@google/genai": "^1.48.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "tree-sitter-wasms": "^0.1.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2",
+    "web-tree-sitter": "^0.22.6"
+  },
+  "devDependencies": {
+    "@esbuild/win32-x64": "^0.28.0",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.21.0"
+  }
+}
